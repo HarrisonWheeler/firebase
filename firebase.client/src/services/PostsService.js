@@ -7,6 +7,7 @@ class PostsService {
   async createPost(newPost) {
     const res = await api.post('api/posts', newPost)
     logger.log('create post res', res)
+    AppState.posts = [new Post(res.data), ...AppState.posts]
   }
 
   async getAllPosts() {

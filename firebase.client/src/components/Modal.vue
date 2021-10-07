@@ -12,6 +12,7 @@
           <slot name="modal-body"></slot>
         </div>
         <div class="modal-footer">
+          <img src="" alt="" class="img-fluid" id="image">
         </div>
       </div>
     </div>
